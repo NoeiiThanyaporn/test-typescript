@@ -1,2 +1,2 @@
 # test-typescript
-# for learning about basic typescript
+this repo is for learning about basic typescript
