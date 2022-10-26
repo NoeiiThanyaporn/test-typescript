@@ -1,7 +1,7 @@
 {
-  "name": "ts",
+  "name": "condition",
   "version": "1.0.0",
-  "description": "",
+  "description": "Basic typescipt - condition",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

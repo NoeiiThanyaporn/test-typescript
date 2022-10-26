@@ -3,12 +3,20 @@
 //   return name + " " + lastname;
 // }
 // console.log(sayHello("Noeii", "T."));
+class Person2 {
+    constructor() {
+        this.name = '';
+        this.lastname = '';
+    }
+}
+;
 // type any
 function sayHello3(name, lastname) {
     let person1 = {
         name: "",
         lastname: "",
     };
+    let person2 = new Person2();
     console.log(typeof person1.name === typeof name &&
         typeof person1.lastname === typeof lastname);
     if (typeof person1.name === typeof name &&

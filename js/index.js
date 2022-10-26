@@ -1,5 +1,7 @@
-const {sendRequest} = require('ts')
+const { sendRequest } = require("ts");
 const { receive } = require('ts/moda')
 
-sendRequest({}) 
+sendRequest({});
+sendRequest({ payload: [] });
+
 // receive()
