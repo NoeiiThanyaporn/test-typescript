@@ -1,1 +1,1 @@
-export {};
+export declare function receive(): void;

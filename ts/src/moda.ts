@@ -1,4 +1,4 @@
-import { sendRequest } from "."
+import { sendRequest } from ".";
 // sendRequest({url: "aaa"})
 sendRequest({
     payload: [{
@@ -13,5 +13,18 @@ sendRequest({
 })
 
 // export function receive() {
-//     sendRequest({url: "aaa"})
+//   sendRequest({
+//     payload: [
+//       {
+//         id: "some id",
+//         name: "some name",
+//       },
+//       {
+//         id: "some id 2",
+//         name: "some name 2",
+//       },
+//     ],
+//   });
 // }
+
+// receive(); 
