@@ -1,5 +1,4 @@
 import cors from 'cors'
-
 import { Response, Request, RequestHandler, NextFunction } from 'express'
 import { createHash } from 'crypto'
 import { CorsOptions } from 'cors'

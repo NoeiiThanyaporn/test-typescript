@@ -35,28 +35,26 @@ export const getPost = async (req: Request, res: Response, next: NextFunction) =
 };
 
 
+
 // updating a post
-export const updatePost = intoExpressHandler(
-   async (req) => {
-        req: Request
+export const updatePost = async (req: Request, res: Response, next: NextFunction) => {
     let {id, title, body} = extractRecord(req.body, {
         id: requiredField(intField),    
         title: requiredField(stringField), 
         body: requiredField(stringField),
     })
+    
+    // update the post
+    let response: AxiosResponse = await axios.put(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+        ...(title && { title }),
+        ...(body && { body })
+    });
 
-        // update the post
-        let response: AxiosResponse = await axios.put(`https://jsonplaceholder.typicode.com/posts/${id}`, {
-            ...(title && { title }),
-            ...(body && { body })
-        });
-
-        // return response
-        return res.status(200).json({
+    // return response
+    return res.status(200).json({
         message: response.data
     });
-// }
-})
+}
 
 // deleting a post
 export const deletePost = async (req: Request, res: Response, next: NextFunction) => {

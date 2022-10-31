@@ -1,6 +1,6 @@
 /** source/routes/posts.ts */
 import express from 'express';
-import { getPosts, getPost, addPost, updatePost, deletePost } from '../controllers';
+import { getPosts, getPost, addPost, updatePost, deletePost } from '../app';
 const router = express.Router();
 
 router.get('/getAll', getPosts);
